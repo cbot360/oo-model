@@ -31,7 +31,7 @@ import org.apache.commons.lang3.StringUtils;
 public class CmsDeployment implements Serializable {
 
   private static final long serialVersionUID = 1L;
-	private static final int CONTINUE_ON_FAILURE_FLAG_POSITION = 0;
+  private static final int CONTINUE_ON_FAILURE_FLAG_POSITION = 0;
 
   private long deploymentId;
   private long releaseId;
@@ -273,7 +273,7 @@ public class CmsDeployment implements Serializable {
     if (updateCollection) {
       if (StringUtils.isNotBlank(autoPauseExecOrdersVal)) {
         autoPauseExecOrders = Arrays.stream(autoPauseExecOrdersVal.split(","))
-            .map(val -> Integer.parseInt(val.trim())).collect(Collectors.toSet());
+          .map(val -> Integer.parseInt(val.trim())).collect(Collectors.toSet());
       }
     }
   }
@@ -345,16 +345,16 @@ public class CmsDeployment implements Serializable {
   }
 
   private void setFlag(int bitPos) {
-		if (this.flags == null) {
-			this.flags = 0;
-		}
+    if (this.flags == null) {
+      this.flags = 0;
+    }
     this.flags |= 1 << bitPos;
   }
 
   private void unsetFlag(int bitPos) {
-		if (this.flags == null) {
-			this.flags = 0;
-		}
+    if (this.flags == null) {
+      this.flags = 0;
+    }
     this.flags &= ~(1 << bitPos);
   }
 

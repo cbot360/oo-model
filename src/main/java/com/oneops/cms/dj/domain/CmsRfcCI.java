@@ -28,7 +28,7 @@ public class CmsRfcCI extends CmsRfcCIBasic implements CmsRfcContainer {
   private static final long serialVersionUID = 1L;
 
   private long nsId;
-	private int ciClassId;
+  private int ciClassId;
   private int rfcActionId;
   private String releaseNsPath;
   private Map<String, CmsRfcAttribute> attributes = new HashMap<>();
@@ -158,16 +158,16 @@ public class CmsRfcCI extends CmsRfcCIBasic implements CmsRfcContainer {
       String[] nsParts = nsPath.split("/");
       String releaseNs = "";
       for (int i = 1; i < nsParts.length; i++) {
-				if (nsParts[i].equals("_design")) {
-					break;
-				}
+        if (nsParts[i].equals("_design")) {
+          break;
+        }
         releaseNs += "/" + nsParts[i];
-				if (nsParts[i].equals("bom")) {
-					break;
-				}
-				if (nsParts[i].equals("manifest")) {
-					break;
-				}
+        if (nsParts[i].equals("bom")) {
+          break;
+        }
+        if (nsParts[i].equals("manifest")) {
+          break;
+        }
       }
       this.releaseNsPath = releaseNs;
     }

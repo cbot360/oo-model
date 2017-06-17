@@ -85,14 +85,14 @@ public interface CmsWorkOrderSimpleBase<T> {
 
   default boolean isPayLoadEntryPresent(String entry) {
     return getPayLoad() != null && getPayLoadEntry(entry) != null
-        && getPayLoadEntry(entry).size() > 0;
+      && getPayLoadEntry(entry).size() > 0;
   }
 
   default boolean isPayloadEntryEqual(String payloadEntry, String attributeName,
-      String valueToBeCompared) {
+    String valueToBeCompared) {
     return !StringUtils.isEmpty(valueToBeCompared) && valueToBeCompared
-        .equals(getPayLoadAttribute(payloadEntry,
-            attributeName));
+      .equals(getPayLoadAttribute(payloadEntry,
+        attributeName));
   }
 
   default boolean isAttributePresentInPayload(String payloadEntry, String atttributeName) {

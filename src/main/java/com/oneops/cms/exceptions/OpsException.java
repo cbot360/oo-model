@@ -58,7 +58,7 @@ public class OpsException extends CmsBaseException {
   public Long getBlockingProcedureId() {
     if (this.exceptionDetails.containsKey(ExceptionDetailKey.BLOCKING_PROCEDURE_CI_ID.name())) {
       return Long
-          .valueOf(this.exceptionDetails.get(ExceptionDetailKey.BLOCKING_PROCEDURE_CI_ID.name()));
+        .valueOf(this.exceptionDetails.get(ExceptionDetailKey.BLOCKING_PROCEDURE_CI_ID.name()));
     } else {
       return null;
     }
@@ -101,12 +101,7 @@ public class OpsException extends CmsBaseException {
   }
 
   public enum ExceptionDetailKey {
-    BLOCKING_PROCEDURE_CI_ID,
-    PROCEDURE_ID,
-    PROCEDURE_NAME,
-    PROCEDURE_STATE,
-    MAX_EXEC_ORDER,
-    ARG_LIST
+    BLOCKING_PROCEDURE_CI_ID, PROCEDURE_ID, PROCEDURE_NAME, PROCEDURE_STATE, MAX_EXEC_ORDER, ARG_LIST
   }
 
 

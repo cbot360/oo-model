@@ -28,7 +28,7 @@ public class CmsRfcRelation extends CmsRfcRelationBasic implements CmsRfcContain
   private static final long serialVersionUID = 1L;
 
   private int relationId;
-	private long nsId;
+  private long nsId;
   private int rfcActionId;
   private Long fromRfcId;
   private Long toRfcId;
@@ -250,16 +250,16 @@ public class CmsRfcRelation extends CmsRfcRelationBasic implements CmsRfcContain
       String[] nsParts = nsPath.split("/");
       String releaseNs = "";
       for (int i = 1; i < nsParts.length; i++) {
-				if (nsParts[i].equals("_design")) {
-					break;
-				}
+        if (nsParts[i].equals("_design")) {
+          break;
+        }
         releaseNs += "/" + nsParts[i];
-				if (nsParts[i].equals("bom")) {
-					break;
-				}
-				if (nsParts[i].equals("manifest")) {
-					break;
-				}
+        if (nsParts[i].equals("bom")) {
+          break;
+        }
+        if (nsParts[i].equals("manifest")) {
+          break;
+        }
       }
       this.releaseNsPath = releaseNs;
     }

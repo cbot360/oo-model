@@ -345,18 +345,18 @@ public class CmsClazz implements Serializable {
   @Override
   public String toString() {
     return "CmsClazz{" +
-        "classId=" + classId +
-        ", className='" + className + '\'' +
-        ", shortClassName='" + shortClassName + '\'' +
-        ", superClassId=" + superClassId +
-        ", accessLevel='" + accessLevel + '\'' +
-        ", isNamespace=" + isNamespace +
-        ", description='" + description + '\'' +
-        ", created=" + created +
-        ", attributes=" + mdAttributes +
-        ", fromRelations=" + fromRelations +
-        ", toRelations=" + toRelations +
-        '}';
+      "classId=" + classId +
+      ", className='" + className + '\'' +
+      ", shortClassName='" + shortClassName + '\'' +
+      ", superClassId=" + superClassId +
+      ", accessLevel='" + accessLevel + '\'' +
+      ", isNamespace=" + isNamespace +
+      ", description='" + description + '\'' +
+      ", created=" + created +
+      ", attributes=" + mdAttributes +
+      ", fromRelations=" + fromRelations +
+      ", toRelations=" + toRelations +
+      '}';
   }
 
   /**

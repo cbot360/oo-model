@@ -29,7 +29,7 @@ import java.util.Map;
  * The Class CmsWorkOrderSimple.
  */
 public class CmsWorkOrderSimple extends CmsDpmtRecord implements
-    CmsWorkOrderSimpleBase<CmsRfcCISimple> {
+  CmsWorkOrderSimpleBase<CmsRfcCISimple> {
 
   private static final long serialVersionUID = 1L;
 

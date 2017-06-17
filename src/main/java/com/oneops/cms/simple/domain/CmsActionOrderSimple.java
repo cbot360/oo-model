@@ -28,7 +28,7 @@ import java.util.Map;
  * The Class CmsActionOrderSimple.
  */
 public class CmsActionOrderSimple extends CmsOpsAction implements
-    CmsWorkOrderSimpleBase<CmsCISimple> {
+  CmsWorkOrderSimpleBase<CmsCISimple> {
 
   private static final long serialVersionUID = 1L;
 
@@ -178,7 +178,7 @@ public class CmsActionOrderSimple extends CmsOpsAction implements
 
   @Override
   public boolean isPayloadEntryEqual(String payloadEntry, String attributeName,
-      String valueToBeCompared) {
+    String valueToBeCompared) {
     return false;
   }
 
